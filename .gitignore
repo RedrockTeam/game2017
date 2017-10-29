@@ -1,0 +1,10 @@
+/.idea/
+/out/
+/target/
+/src/main/resources/properties/db.properties
+/src/main/resources/properties/cookie.properties
+/src/main/resources/properties/resource.properties
+/src/main/resources/properties/client.conf
+/src/main/java/org/cet/common/
+/.settings/
+/logs/
