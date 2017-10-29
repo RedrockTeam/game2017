@@ -35,6 +35,9 @@ public class AuthController {
     @Value("${BTN_URL}")
     private String BTN_URL;
 
+    /**
+    * 用户在拦截器里获取信息验证通过后 重定向到前端页面
+    */
     @RequestMapping(value = "/click/{type}",method = RequestMethod.GET)
     public void getView(HttpServletRequest request, HttpServletResponse response,@PathVariable Integer type) throws IOException {
         try {
@@ -78,7 +81,7 @@ public class AuthController {
     }
 
     /**
-     * 用户点击记录openID和点击次数
+     * 用户点击记录openID
      * @param
      * @return
      */
@@ -136,6 +139,9 @@ public class AuthController {
             return null;
         }
     }
+    /**
+    * 抽取幸运用户
+    */
 
     @RequestMapping(value = "/luck",method = RequestMethod.GET)
     @ResponseBody
@@ -220,6 +226,9 @@ public class AuthController {
         return true;
     }
 
+    /**
+    * 根据websocket里面的sessionMap里面的值来判断游戏是否开始
+    */
     @RequestMapping(value = "/auth/startgame",method = RequestMethod.GET)
     @ResponseBody
     public Result authStartGame(Integer type){
@@ -247,6 +256,9 @@ public class AuthController {
         return result;
     }
 
+    /**
+    * 用户点击后增加本会场的点击次数
+    */
     private String processUserClickException(Integer type){
         String clickKey = null;
         if(type == 1) {
