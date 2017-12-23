@@ -9,5 +9,5 @@
 	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
 
     <!--扫描所有带@service的包  -->
-    <context:component-scan base-package="org.cet.service"></context:component-scan>
+    <context:component-scan base-package="org.game.service,org.game.component"/>
 </beans>

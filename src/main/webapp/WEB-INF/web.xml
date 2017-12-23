@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
          http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-  <display-name>cet</display-name>
+  <display-name>game</display-name>
 
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
@@ -72,7 +72,7 @@
 
   <filter-mapping>
     <filter-name>HiddenHttpMethodFilter</filter-name>
-    <servlet-name>redrock-cet</servlet-name>
+    <servlet-name>game</servlet-name>
   </filter-mapping>
 
   <!--<filter>-->
@@ -86,7 +86,7 @@
   <!--解决跨域访问-->
   <!-- springmvc的前端控制器 -->
   <servlet>
-    <servlet-name>redrock-cet</servlet-name>
+    <servlet-name>game</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     <!-- contextConfigLocation不是必须的， 如果不配置contextConfigLocation， springmvc的配置文件默认在：WEB-INF/servlet的name+"-servlet.xml" -->
     <init-param>
@@ -96,7 +96,7 @@
     <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
-    <servlet-name>redrock-cet</servlet-name>
+    <servlet-name>game</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
 

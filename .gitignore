@@ -5,6 +5,10 @@
 /src/main/resources/properties/cookie.properties
 /src/main/resources/properties/resource.properties
 /src/main/resources/properties/client.conf
-/src/main/java/org/cet/common/
+/src/main/resources/properties/log4j.properties
+/src/main/java/org/game/common/
 /.settings/
 /logs/
+/bind.sql
+/weixin-game.iml
+/游戏数据请求文档.mdown

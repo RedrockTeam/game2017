@@ -18,7 +18,7 @@
 		<property name="username" value="${jdbc.username}" />
 		<property name="password" value="${jdbc.password}" />
 		<property name="driverClassName" value="${jdbc.driver}" />
-		<property name="maxActive" value="10" />
+		<property name="maxActive" value="5" />
 		<property name="minIdle" value="5" />
 	</bean>
 	<!--让spring管理sqlSessionFactory  -->
@@ -31,6 +31,6 @@
 	</bean>
 	<!--扫描mapper文件  -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="org.cet.dao" />
+		<property name="basePackage" value="org.game.dao" />
 	</bean>
 </beans>

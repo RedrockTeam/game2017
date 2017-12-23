@@ -32,6 +32,6 @@
 	<!-- 切面 -->
 	<aop:config>
 		<aop:advisor advice-ref="txAdvice"
-			pointcut="execution(* org.cet.service.*.*(..))" />
+			pointcut="execution(* org.game.service.*.*(..))" />
 	</aop:config>
 </beans>
