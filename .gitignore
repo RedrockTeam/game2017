@@ -6,7 +6,8 @@
 /src/main/resources/properties/resource.properties
 /src/main/resources/properties/client.conf
 /src/main/resources/properties/log4j.properties
-/src/main/java/org/game/common/
+/src/main/java/org/game/common/URL.java
+/src/main/webapp/
 /.settings/
 /logs/
 /bind.sql
